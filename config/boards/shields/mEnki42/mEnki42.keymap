@@ -53,16 +53,16 @@
                 default_layer {
                         bindings = <
         &mt LWIN  RBKT   &kp Q           &kp W                    &kp E       &kp R          &kp T               &kp Y  &kp U  &kp I     &kp O   &kp P    &mt RWIN LBKT 
-        &mt LCTRL GRAVE  &kp A           &kp S                    &kp D       &kp F          &kp G               &kp H  &kp J  &kp K     &kp L   &kp SEMI &mt RCTRL SQT
-        &mt LALT  BSLH   &kp Z           &kp X                    &kp C       &kp V          &kp B               &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH &mt RALT MINUS
-        &lt RSE   TAB    &mt LSHFT SPACE &lt LWR RET              &lt LWR ESC &mt RSHFT BSPC &lt RSE DEL
+        &mt LSHFT GRAVE  &kp A           &kp S                    &kp D       &kp F          &kp G               &kp H  &kp J  &kp K     &kp L   &kp SEMI &mt LSHFT SQT
+        &mt LCTRL  BSLH  &kp Z           &kp X                    &kp C       &kp V          &kp B               &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH &mt LCTRL MINUS
+        &lt RSE   TAB    &mt LALT SPACE  &lt LWR RET              &lt LWR ESC &mt LALT BSPC  &lt RSE DEL
                         >;
                 };
                 lower_layer {
                         bindings = <
                         &mt LWIN F1             &kp F2          &kp F3       &kp F4       &kp F5       &kp F6       &kp F7       &kp F8       &kp F9       &kp F10      &kp F11      &mt RWIN F12
-                        &mt LCTRL PLUS          &kp EXCL        &kp AT       &kp HASH     &kp DOLLAR   &kp PERCENT  &kp CARET    &kp AMPS     &kp STAR     &kp LPAR     &kp RPAR     &mt RALT UNDER
-                        &mt LALT EQUAL          &kp N1          &kp N2       &kp N3       &kp N4       &kp N5       &kp N6       &kp N7       &kp N8       &kp N9       &kp N0       &mt RALT MINUS
+                        &mt LSHFT PLUS          &kp EXCL        &kp AT       &kp HASH     &kp DOLLAR   &kp PERCENT  &kp CARET    &kp AMPS     &kp STAR     &kp LPAR     &kp RPAR     &mt LSHFT UNDER
+                        &mt LCTRL EQUAL         &kp N1          &kp N2       &kp N3       &kp N4       &kp N5       &kp N6       &kp N7       &kp N8       &kp N9       &kp N0       &mt LCTRL MINUS
                         &to PS                  &trans          &trans        &trans       &trans       &to PS
                         >;
                 };
@@ -70,19 +70,19 @@
             bindings = <
 
 &mt LWIN ESC    &kp KP_SLASH       &kp HOME     &kp UP          &kp MINUS      &kp EQUAL             &bootloader &kp INS        &kp HOME   &kp PG_UP &none   &mt LWIN ESC
-&kp LCTRL       &kp KP_MULTIPLY    &kp LEFT     &kp DOWN        &kp RIGHT      &kp SPACE             &kp LEFT    &kp DEL        &kp END    &kp PG_DN &none   &mt RCTRL K_MENU
-&kp LEFT_ALT    &kp KP_NUMBER_0    &kp END      &none           &kp LBKT       &kp RBKT              &none       &kp END        &none      &none     &none   &kp RALT
-&trans          &mt RSHFT BSPC     &kp RET                                                           &kp RET     &mt RSHFT BSPC &trans
+&kp LSHFT       &kp KP_MULTIPLY    &kp LEFT     &kp DOWN        &kp RIGHT      &kp SPACE             &kp LEFT    &kp DEL        &kp END    &kp PG_DN &none   &mt LSHFT K_MENU
+&kp LCTRL       &kp KP_NUMBER_0    &kp END      &none           &kp LBKT       &kp RBKT              &none       &kp END        &none      &none     &none   &kp LCTRL
+&trans          &mt LALT BSPC     &kp RET                                                           &kp RET     &mt LALT BSPC &trans
             
             >;
                 };
                                 ps_layer {
                         bindings = <
 
-&mt LWIN ESC         &none         &kp W         &kp LBKT     &kp RBKT        &kp T                             &none        &none          &none        &kp O        &none         &mt LWIN ESC
-&kp LCTRL            &kp A         &kp S         &none        &kp F           &bt BT_SEL 4                      &bt BT_SEL 4 &kp J          &kp N9       &kp N8       &kp N7        &mt LCTRL N6 
-&kp LEFT_ALT         &none         &kp X         &kp MINUS    &kp EQUAL       &kp B                             &kp N0       &kp N1         &kp N2       &kp N3       &kp N4        &mt LEFT_ALT N5
-                                                 &kp TAB      &mt RSHFT BSPC  &kp SPACE                         &trans       &mt RSHFT BSPC &to DEF
+&kp LBKT          &kp RBKT      &kp W         &kp E        &none           &kp T                             &kp LBKT     &kp RBKT       &none        &kp O        &none         &mt LWIN ESC
+&kp LSHFT         &kp A         &kp S         &none        &kp F           &bt BT_SEL 4                      &bt BT_SEL 4 &kp J          &kp N9       &kp N8       &kp N7        &mt LSHFT N6 
+&kp LCTRL         &none         &kp X         &kp MINUS    &kp EQUAL       &kp B                             &kp N0       &kp N1         &kp N2       &kp N3       &kp N4        &mt LCTRL N5
+                                                 &kp TAB      &mt LALT BSPC   &kp SPACE                      &kp ESC      &mt LALT BSPC &to DEF
                         >;
                 };
         };
